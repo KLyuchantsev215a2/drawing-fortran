@@ -1,23 +1,22 @@
-clear;    
-ss1=load('Displacment_X_top_right1.txt');
-ss2=load('Displacment_Y_top_right1.txt');
-ss4=load('Cauchy_stresses_1_1_MIDDLE_SPECTACULAR.txt');
-ss5=load('Cauchy_stresses_1_2_MIDDLE_SPECTACULAR.txt');
-ss6=load('Cauchy_stresses_2_2_MIDDLE_SPECTACULAR.txt');
-ss7=load('output_C_41_r_8.txt');
-ss8=load('output_C_21_r_8.txt');
-ss3=load('output_x_11_r_8.txt');
-ss9=load('ouput_x_41_r_8.txt');
-ss10=load('Coshi.txt');
-ss11=load('output.txt');
+clear;   
+
+ss1=load('x.txt');
+ss2=load('y.txt');
+ss3=load('C11.txt');
+ss4=load('C22.txt');
+
+ss7=load('Cauchy_stresses_1_1_MIDDLE_SPECTACULAR_lamped_mass.txt');
+ss8=load('Cauchy_stresses_1_2_MIDDLE_SPECTACULAR_lamped_mass.txt');
+ss9=load('Cauchy_stresses_2_2_MIDDLE_SPECTACULAR_lamped_mass.txt');
+
+ss5=load('output_C.txt');
+ss6=load('output_x.txt');
+
 scatter(ss1(:,1),ss1(:,2));
-plot( ss9(:,3), ss9(:,1),'r', ss9(:,3), ss9(:,2),'r',ss3(:,3), ss3(:,1),'b', ss3(:,3), ss3(:,2),'b',ss1(:,2),ss1(:,3),'k',ss2(:,2),ss2(:,3),'k');
-%plot( ss10(:,4), ss10(:,1),ss10(:,4), ss10(:,3),ss10(:,4),ss10(:,2),ss5(:,2), ss5(:,3),'--',ss4(:,2), ss4(:,3),'--',ss6(:,2), ss6(:,3),'--');
-%plot( ss7(:,4), ss7(:,1),ss7(:,4), ss7(:,3),ss7(:,4),ss7(:,2),ss5(:,2), ss5(:,3),'--',ss4(:,2), ss4(:,3),'--',ss6(:,2), ss6(:,3),'--');
-%plot(ss7(:,4), ss7(:,1),'r',ss7(:,4), ss7(:,3),'r',ss7(:,4), ss7(:,2),'r', ss8(:,4), ss8(:,1),'b',ss8(:,4), ss8(:,3),'b',ss8(:,4), ss8(:,2),'b',ss5(:,2), ss5(:,3),'k',ss4(:,2), ss4(:,3),'k',ss6(:,2), ss6(:,3),'k');
-%plot(ss4(:,2), ss4(:,3),'k');
-axis([-0.01 1.2 -0.3 0.83]); 
-%plot(ss10(:,4), ss10(:,1),'r',ss10(:,4), ss10(:,3),'r',ss10(:,4), ss10(:,2),'r', ss8(:,4), ss8(:,1),'b',ss8(:,4), ss8(:,3),'b',ss8(:,4), ss8(:,2),'b',ss5(:,2), ss5(:,3),'k',ss4(:,2), ss4(:,3),'k',ss6(:,2), ss6(:,3),'k',ss7(:,4), ss7(:,1),'g',ss7(:,4), ss7(:,3),'g',ss7(:,4), ss7(:,2),'g');
+%plot( ss6(:,3), ss6(:,1),'r', ss6(:,3), ss6(:,2),'r',ss1(:,2), ss1(:,3),'k', ss2(:,2), ss2(:,3),'k');
+%plot( ss5(:,4), ss5(:,1),ss5(:,4), ss5(:,3),ss5(:,4),ss5(:,2),ss3(:,2), ss3(:,3),'k',ss4(:,2), ss4(:,3),'k');
+plot( ss5(:,4), ss5(:,1),'r',ss5(:,4), ss5(:,3),'r',ss5(:,4),ss5(:,2),'r',ss7(:,2), ss7(:,3),'k',ss8(:,2), ss8(:,3),'k',ss9(:,2), ss9(:,3),'k');
+
 
 
 
