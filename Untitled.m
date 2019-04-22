@@ -1,6 +1,6 @@
 clear;   
 ss20=load('StresssDistributionT03.txt');
-ss21=load('StresssDistributionT04.txt');
+ss21=load('C:\Users\mmfhanter\Documents\Visual Studio 2012\Projects\Visco_plasticity\Visco_plasticity\output_C.txt');
 ss22=load('StresssDistributionT066.txt');
 
 plot(ss21(:,2),ss21(:,1), 'r');
