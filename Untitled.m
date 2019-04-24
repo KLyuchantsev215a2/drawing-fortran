@@ -1,9 +1,9 @@
 clear;   
 ss20=load('StresssDistributionT03.txt');
 ss21=load('C:\Users\mmfhanter\Documents\Visual Studio 2012\Projects\Visco_plasticity\Visco_plasticity\output_C.txt');
-ss22=load('StresssDistributionT066.txt');
+ss22=load('MARC_TopRight_density1000_damping0_C11_EqStress.txt');
 
-plot(ss21(:,2),ss21(:,1), 'r');
+plot(ss21(:,2),ss21(:,1)*(sqrt(3/2)),'r',ss22(:,2),ss22(:,3),'b');
 %plot(ss22(:,2), ss22(:,3),'b');%, ss6(:,3), ss6(:,2),'r',ss46(:,2),ss46(:,3),'k',ss56(:,2),ss56(:,3),'k');
 
 
